@@ -14,8 +14,17 @@ var desiredCharacters = []
 
 var decision; 
 
+// password length
 
+length = prompt("Password length must be between 8 and 128 characters long.");
+    length = parseInt(length)
+    if (length < 8 || length > 128) {
+      return "Please choose a password that contains between 8 and 128 characters."
+    } else {
+      alert("Password length is " + length + " characters long.");
+    } 
 
+    
 
 
 
