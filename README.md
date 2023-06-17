@@ -15,6 +15,6 @@ The following is a list of requirements for the new code:
 - When the password is generated, the user will be alerted. 
 
 
-Link to deployment:
+Link to deployment: https://lizf57.github.io/password_generator/
 
 ![Project Screenshot](./images/webpage-screenshot.png)
