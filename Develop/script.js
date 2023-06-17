@@ -59,6 +59,78 @@ function generatePassword(){
           alert("Your password does not contain special characters.");
         }
 
+  // No characters chosen        
+
+    if (!lowCharacters && !upperCharacters && !numericCharacters && !specCharacters) {
+      return "Select a character type.";  
+    }
+    
+  // all characters chosen  
+    else if (lowCharacters && upperCharacters && numericCharacters && specCharacters) {
+    decision =  desiredCharacters.concat(lowCharacters, upperCharacters, numericCharacters, specCharacters);
+    }
+
+  // 3 characters chosen:
+
+    if (lowCharacters && upperCharacters && numericCharacters) {
+      decision = desiredCharacters.concat(lowCharacters, upperCharacters, numericCharacters);
+    }
+
+    if (lowCharacters && upperCharacters && specCharacters) {
+      decision = desiredCharacters.concat(lowCharacters, upperCharacters, specCharacters);
+    }
+
+    if (lowCharacters && numericCharacters && specCharacters) {
+      decision = desiredCharacters.concat(lowCharacters, numericCharacters, specCharacters);
+    }
+     
+    if (upperCharacters && numericCharacters && specCharacters) {
+      decision = desiredCharacters.concat(upperCharacters, numericCharacters, specCharacters);
+    }
+
+  // 2 characters chosen:
+
+    if (lowCharacters && upperCharacters) {
+      decision = desiredCharacters.concat(lowCharacters, upperCharacters);
+    }
+
+    if (lowCharacters && numericCharacters) {
+      decision = desiredCharacters.concat(lowCharacters, numericCharacters);
+    }
+
+    if (lowCharacters && specCharacters) {
+      decision = desiredCharacters.concat(lowCharacters, specCharacters);
+    }
+
+    if (upperCharacters && numericCharacters) {
+      decision = desiredCharacters.concat(upperCharacters, numericCharacters);
+    }
+
+    if (upperCharacters && specCharacters) {
+      decision = desiredCharacters.concat(upperCharacters, specCharacters);
+    }
+
+    if (numericCharacters && specCharacters) {
+      decision = desiredCharacters.concat(numericCharacters, specCharacters);
+    }
+
+    // 1 character chosen:
+
+    if (upperCharacters) {
+      decision = desiredCharacters.concat(upperCharacters);
+    }
+     if (numericCharacters) {
+      decision = desiredCharacters.concat(numericCharacters);
+     }
+
+     if (specCharacters) {
+      decision = desiredCharacters.concat(specCharacters);
+     };
+
+
+
+
+
 
 
 
