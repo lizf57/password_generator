@@ -133,17 +133,17 @@ function generatePassword(){
      
      for (var i = 0; i < length; i++) {
  
-     var decision = decision[Math.floor(Math.random() * decision.length)];
-       password.push(decision);
+     var decision = [Math.floor(Math.random() * desiredCharacters.length)];
+       // password.push(decision);
        
-       // password = password + desiredCharacters[random];
+       password = password + desiredCharacters[decision];
  
      return password;
      }
 
   }
 
-  
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
