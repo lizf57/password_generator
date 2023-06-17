@@ -114,7 +114,7 @@ function generatePassword(){
       decision = desiredCharacters.concat(numericCharacters, specCharacters);
     }
 
-    // 1 character chosen:
+  // 1 character chosen:
 
     if (upperCharacters) {
       decision = desiredCharacters.concat(upperCharacters);
@@ -127,16 +127,23 @@ function generatePassword(){
       decision = desiredCharacters.concat(specCharacters);
      };
 
+  // random generator   
 
-
-
-
-
-
-
+     var password = [];
+     
+     for (var i = 0; i < length; i++) {
+ 
+     var decision = decision[Math.floor(Math.random() * decision.length)];
+       password.push(decision);
+       
+       // password = password + desiredCharacters[random];
+ 
+     return password;
+     }
 
   }
 
+  
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
