@@ -13,3 +13,8 @@ The following is a list of requirements for the new code:
 - The password must contain at least one of the following: lowercase, uppercase, numeric, and/or special characters. 
 - When all criteria is met, the password will be generated and ready to use.
 - When the password is generated, the user will be alerted. 
+
+
+Link to deployment:
+
+![Project Screenshot](./images/webpage-screenshot.png)

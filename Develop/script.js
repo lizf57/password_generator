@@ -135,7 +135,7 @@ function generatePassword(){
  
      var decision = [Math.floor(Math.random() * desiredCharacters.length)];
        // password.push(decision);
-       
+
        password = password + desiredCharacters[decision];
  
      return password;
