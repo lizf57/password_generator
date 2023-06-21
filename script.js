@@ -62,7 +62,7 @@ function generatePassword(){
   // No characters chosen        
 
     if (!lowCharacters && !upperCharacters && !numericCharacters && !specCharacters) {
-      return "Select a character type.";  
+      return "Select at least one character type.";  
     }
     
   // all characters chosen  
@@ -126,22 +126,22 @@ function generatePassword(){
      if (specCharacters) {
       decision = desiredCharacters.concat(specCharacters);
      };
-
+    }
   // random generator   
 
-     var password = [];
+
+  function getRandomPassword(){
+     var password 
      
      for (var i = 0; i < length; i++) {
  
      var decision = [Math.floor(Math.random() * desiredCharacters.length)];
        // password.push(decision);
 
-       password = password + desiredCharacters[decision];
- 
-     return password;
+       password = desiredCharacters[decision]
      }
 
-  }
+    }
 
 
 // Get references to the #generate element
